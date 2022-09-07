@@ -27,3 +27,24 @@ function operate(operator, n1, n2){
         return divide(n1, n2);
     }
 }
+
+let barText = '';
+let bar = document.querySelector('.bar');
+let numberButtons = document.querySelectorAll('.number');
+
+numberButtons.forEach( (element) =>{
+    element.addEventListener('click', () =>{
+        barText = barText + element.value;
+        bar.textContent = barText;
+    });
+}
+)
+
+let operatorButtons = document.querySelectorAll('.operator');
+
+operatorButtons.forEach( (element) => {
+    element.addEventListener('click', () => {
+        barText = barText + ' ' + element.value + ' ';
+        bar.textContent = barText;
+    })
+});
