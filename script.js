@@ -13,3 +13,17 @@ function multiply(n1, n2){
 function divide(n1, n2){
     return n2 === 0? 'Syntax Error': n1/n2;
 }
+
+function operate(operator, n1, n2){
+    if (operator === '+'){
+        return sum(n1, n2);
+    } else if(operator === '-'){
+        return subtract(n1, n2);
+    }
+    else if(operator === '*'){
+        return multiply(n1, n2);
+    }
+    else if(operator === '/'){
+        return divide(n1, n2);
+    }
+}
