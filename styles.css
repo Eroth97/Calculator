@@ -5,6 +5,7 @@ body{
     justify-content: space-between;
     height: 100vh;
     margin: 0;
+    background: #ffebbb;
 }
 
 button{
@@ -13,12 +14,27 @@ button{
     font-size: 28px;
 }
 
+button, .calculator, .bar{
+    border-radius: 8px;
+}
+
 footer{
     padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+}
+
+.calculator{
+    padding: 8px;
+    background: darkgray;
+}
+
+.calculator, .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .bar{
